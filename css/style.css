@@ -1,0 +1,108 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+
+body{background-color: rgb(228, 225, 225);}
+
+.row::after{
+    display: table;
+    width: 100%;
+}
+
+[class*="col-"]{
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%; grid-row: 1;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 58%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.m-1{margin: .5em;}
+.m-2{margin: 1em;}
+.m-3{margin: 1.5em;}
+.m-4{margin: 2em;}
+
+.p-1{margin: .5em;}
+.p-2{margin: 1em;}
+.p-3{margin: 1.5em;}
+.p-4{margin: 2em;}
+
+.text-area{
+    width: 99%;
+    height: 50%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    border: none;
+    color: rgba(57, 75, 228, 0.808);
+}
+
+.error{background-color: rgba(17, 0, 255, 0.342);}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.btn-primary{
+    background-color: rgba(57, 57, 228, 0.808);
+    border: 1px solid rgba(57, 57, 228, 0.808);
+    color: #fff;
+}
+
+.btn-primary:hover{
+    background-color: rgba(142, 142, 238, 0.808);
+    border: 1px solid rgba(142, 142, 238, 0.808);
+}
+
+.btn-info{
+    background-color: rgba(199, 199, 211, 0.808);
+    border: 1px solid rgba(199, 199, 211, 0.808);
+    color: rgba(57, 57, 228, 0.808);
+}
+
+.btn-info:hover{
+    background-color: rgba(57, 57, 228, 0.5);
+    border: 1px solid rgba(57, 57, 228, 0.808);
+    color: #fff;
+}
+.copiar{
+   position: absolute;
+   bottom: -1.5em;
+   width: 30%;
+   padding: 10px;
+   margin-left: 2em;
+   border-radius: 15px;
+}
+
+.card{
+    background-color: #fff;
+    height: 38em;
+    border-radius: 25px;
+
+}
+.imagen{margin: 9rem 8rem 6rem 8rem;}
+.left{text-align: start;}
+.center{text-align: center;}
+
+@media only screen and (max-width:970px){
+    .col-sm-1{width: 80%;}
+    .col-sm-2{width: 85%;}
+    .card2{height: auto;}
+    .image{display: none !important;}
+    .copiar{
+        position: relative;
+        width: 80%;
+    }
+}

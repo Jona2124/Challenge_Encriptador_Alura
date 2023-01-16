@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="m-1">
+        <img src="img/logo.png" alt="logo">
+    </nav>
+
+    <section>
+        <div class="row m-3">
+            <div class="col-7 col-sm-1">
+                <textarea name="text" class="text-area" id="text" cols="30" rows="10" placeholder="Inserte el texto"    autofocus></textarea>
+                <p class="error m-1" id="error"><img src="img/Vector.png" alt="icono"> Solo letras minusculas y sin acento</p>
+                <div class="row m-1">
+                    <div class="col-5 col-sm-2 m-1">
+                        <button class="btn btn-primary" onclick="encriptar()">Encriptar</button>
+                    </div>
+                    <div class="col-5 col-sm-2 m-1">
+                        <button class="btn btn-info" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 col-sm-2 m-1 card card2">
+                <img src="img/muneco.png" class="imagen image" alt="imagen de muneco" id="imagen">
+
+                <section class="row left m-4" id="resultado">
+                    <h1 class="center">Ningun mensaje fue encontrado</h1>
+                    <p class="center">ingrese el texto que desea encriptar o desencriptar</p>
+                </section>
+
+                <div class="col-12">
+                    <button id="copiar" class="btn-info copiar" hidden>Copiar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+   <script src="js/functions.js"></script>
+</body>
+
+</html>
